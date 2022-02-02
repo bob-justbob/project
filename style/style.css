@@ -247,10 +247,12 @@ section {
     }
     .sectionTwo {
         height: 800px;
+        justify-content: left;
     }
     .main {
         flex-direction: column;
         height: 600px;
+        justify-self: left;
         
     }
     .openmap {
@@ -263,6 +265,9 @@ section {
     .here {
         margin-bottom: 10px ;
     }
+
+ 
+
 }
 
 @media (max-width: 660px){
