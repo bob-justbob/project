@@ -85,6 +85,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
 }
 
 .sectionTwo h1 {
@@ -164,9 +165,11 @@ p {
 
 .information {
     width: 100%;
-    height: 400px;
+    height: 450px;
     display: flex;
-    margin: 20px 0 0 20px;
+    margin: 0 0 0 20px;
+    border: 2px solid gray;
+    flex-direction: row;
 }
 
 .image {
@@ -198,6 +201,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid gray;
+    flex-direction: row;
 }
 
 .here {
@@ -209,4 +214,55 @@ section {
 
 .change {
     font-family: "ALKDots", sans-serif;
+}
+
+
+@media (max-width: 1270px){
+    .container {
+        height: 800px;
+    }
+    .information {
+        height: 800px;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+    .something {
+        width: 100%;
+    }
+    .image {
+        display: none;
+    }
+    .sectionTwo {
+        height: 800px;
+    }
+    .main {
+        flex-direction: column;
+        height: 600px;
+        
+    }
+    .openmap {
+        margin-top: 80px;
+    }
+    .map {
+        flex-direction: column;
+        height: 800px;
+    }
+    .here {
+        margin-bottom: 10px ;
+    }
+}
+
+@media (max-width: 660px){
+    .container {
+        height: 1000px;
+    }
+    .information {
+        height: 1000px;
+        flex-direction: column;
+        margin-top: 5px;
+        
+    }
+    span {
+        display: none;
+    }
 }
