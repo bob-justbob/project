@@ -1,7 +1,11 @@
 
 body {
     background: linear-gradient(to right, darkgray, lightgray);
+    width: 100%;
+    height: 100vh;
 }
+
+
 
 header div {
     width: 40px;
@@ -111,8 +115,9 @@ a:hover {
 
 .imgfordiv {
     width: 100px;
-    height: 117px;
-
+    height: 200px;
+    justify-content: center;
+    align-items: center;
 }
 
 .imgfordiv img {
@@ -237,11 +242,18 @@ section {
     }
     .info p {
         margin-top: 5px;
-        width: 400px;
+        width: 300px;
         height: 400px;
         text-align: center;
         margin-left: 50px;
     }
+    p {
+        width: 50%;
+    }
+    .content {
+        width: 70%;
+    }
+
     .image {
         display: none;
     }
@@ -265,9 +277,17 @@ section {
     .here {
         margin-bottom: 10px ;
     }
-
+    .imgfordiv img {
+        max-width: 200px;
+    }
+    .sectionTwo h1 {
+        margin: 0%;
+    }
+    .bannerImg {
+        max-width: 300px;
+    }
  
-
+    * 
 }
 
 @media (max-width: 660px){
